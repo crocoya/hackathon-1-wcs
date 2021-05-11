@@ -1,5 +1,5 @@
 import React from 'react';
-import './Reservation.css';
+import './styles/Reservation.css';
 
 export default function Reservation() {
   return (

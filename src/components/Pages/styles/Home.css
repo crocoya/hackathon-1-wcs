@@ -20,4 +20,10 @@ html {
   color: white;
   padding: 15px;
   font-size: 1.2em;
+  cursor: pointer;
+}
+
+.button-réserver:hover {
+  background-color: #fff;
+  color: #010101;
 }
