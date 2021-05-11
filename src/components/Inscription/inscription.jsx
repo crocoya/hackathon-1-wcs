@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import { useHistory } from 'react-router';
 import { useAuth } from '../Firebase/Context';
 import UserService from '../Service/user-service';
-import './Inscription.css';
+import './inscription.css';
 
 export default function Inscription() {
   const nameRef = useRef();

@@ -11,7 +11,9 @@ export default function Reservation() {
   }, []);
   return (
     <>
-      <div className='container-reservation'>{currentUser.pseudo}</div>
+      <div className='container-reservation'>
+        {currentUser && <div>{currentUser.pseudo}</div>}
+      </div>
     </>
   );
 }

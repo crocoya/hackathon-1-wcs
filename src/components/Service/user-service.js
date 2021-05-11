@@ -44,6 +44,7 @@ const UserService = {
       uid,
       pseudo: name,
     };
+    // const result = await firestore.collection('users').add({date: date, départ: départ, destination: destination,})
 
     /* let usersData = await axios.get('/users.json').then((res) => res.data);
     // check if the user isn't already existing, if not, create it
