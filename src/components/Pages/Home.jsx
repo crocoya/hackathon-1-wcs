@@ -2,7 +2,7 @@
 
 import React from 'react';
 import './Home.css';
-import Navigation from './Navigation';
+import Navigation from '../Navigation/Navigation';
 
 export default function Home() {
   return (
