@@ -31,7 +31,7 @@ a {
 .se_connecter {
   border-radius: 3px;
   border-color: white;
-  background-color: black;
+  background: transparent;
   color: white;
   margin-right: 40px;
   padding: 10px;
@@ -41,7 +41,7 @@ a {
 .s-inscrire {
   border-radius: 3px;
   border-color: white;
-  background-color: black;
+  background: transparent;
   color: white;
   padding: 10px;
   border: solid 1px;

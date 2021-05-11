@@ -45,7 +45,7 @@ export default function Inscription() {
   return (
     <>
       <div className='cont'>
-        <div className='form sign-up'>
+        <div className='form-sign-up'>
           <div className='inform'>
             <h2>Rejoignez une aventure unique</h2>
             {error && <div className='setError'>{error}</div>}

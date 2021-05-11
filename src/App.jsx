@@ -6,6 +6,8 @@ import Inscription from './components/Inscription/Inscription';
 import About from './components/Pages/About';
 import Home from './components/Pages/Home';
 import Reservation from './components/Pages/Reservation';
+import Navigation from './components/Navigation/Navigation';
+import './App.css';
 
 function App() {
   return (
@@ -13,11 +15,12 @@ function App() {
       <div className='App'>
         <FirebaseContext>
           <Router>
+            <Navigation />
             <Switch>
               <Route exact path='/'>
                 <Home />
               </Route>
-              <Route exact path='/reservation'>
+              <Route path='/Reservation'>
                 <Reservation />
               </Route>
               <Route exact path='/about'>

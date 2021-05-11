@@ -1,4 +1,23 @@
-.backgroundPlanet {
-  width: 100%;
-  height: auto;
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+html {
+  margin: 0;
+  padding: 0;
+}
+.pres {
+  display: flex;
+  justify-content: center;
+}
+
+.button-réserver {
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 450px;
+  border: solid 1px;
+  font-family: 'Space Mono';
+  background-color: transparent;
+  border-radius: 3px;
+  border-color: white;
+  color: white;
+  padding: 15px;
+  font-size: 1.2em;
 }
