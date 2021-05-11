@@ -1,16 +1,16 @@
 import React from 'react';
-import './About.css';
+import './styles/About.css';
 import Navigation from '../Navigation/Navigation';
 
 export default function About() {
   return (
     <div className='About'>
       <Navigation />
-      <div class='fade'></div>
+      <div className='fade'></div>
 
-      <section class='star-wars'>
-        <div class='crawl'>
-          <div class='title'>
+      <section className='star-wars'>
+        <div className='crawl'>
+          <div className='title'>
             <p>Votre voyage</p>
             <h1>PARTIE I</h1>
           </div>
