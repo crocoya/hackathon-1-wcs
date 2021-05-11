@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import FirebaseContext from './components/Firebase/Context';
-import Home from './components/Landing/Home';
+import Home from './components/Pages/Home';
 
 function App() {
   return (
