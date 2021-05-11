@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+.Navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  font-family: 'Space Mono';
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  list-style-type: none;
+  margin-left: 80px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.se_connecter {
+  border-radius: 3px;
+  border-color: white;
+  background-color: black;
+  color: white;
+  margin-right: 40px;
+  padding: 10px;
+  border: solid 1px;
+  font-family: 'Space Mono';
+}
+.s-inscrire {
+  border-radius: 3px;
+  border-color: white;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: solid 1px;
+  font-family: 'Space Mono';
+}
