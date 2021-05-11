@@ -2,19 +2,22 @@
 
 import React from 'react';
 import './styles/Home.css';
+import { Link } from 'react-router-dom';
 import Navigation from '../Navigation/Navigation';
+import Reservation from './Reservation';
 
 export default function Home() {
   return (
-    <div className='pres'>
-      <Navigation />
-      <div className='containerImg'>
-        <img
-          className='backgroundPlanet'
-          alt='planète'
-          src='https://cdn.pixabay.com/photo/2016/10/20/18/35/earth-1756274_960_720.jpg'
-        />
+    <main>
+      <div className='pres'>
+        <div className='positionBotton'>
+          <Link to='/reservation'>
+            <button type='button' className='button-réserver'>
+              Rejoigner le voyage interplanétaire <br /> de votre choix
+            </button>
+          </Link>
+        </div>
       </div>
-    </div>
+    </main>
   );
 }

@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { useHistory } from 'react-router';
 import { useAuth } from '../Firebase/Context';
 import UserService from '../Service/user-service';
+import './Connexion.css';
 
 export default function Connexion() {
   const emailRef = useRef();
@@ -36,7 +37,7 @@ export default function Connexion() {
   }
   return (
     <>
-      <div className='cont'>
+      <div className='cont1'>
         <div className='form sign-up'>
           <div className='inform'>
             <h2>Connectez-vous</h2>
