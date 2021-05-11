@@ -1,13 +1,12 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
-import Form from '../Form/Form';
+import './Home.css';
+import Navigation from './Navigation';
 
 export default function Home() {
   return (
-    <>
-      <div>
-        <h1>hello world</h1>
-      </div>
-      <Form />
-    </>
+    <div className='pres'>
+      <Navigation />
+    </div>
   );
 }
