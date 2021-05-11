@@ -7,7 +7,7 @@ export default function Connexion() {
   const emailRef = useRef();
   const passwordRef = useRef();
 
-  const { signUpWithEmail } = useAuth();
+  const { signInWithEmail } = useAuth();
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -19,7 +19,7 @@ export default function Connexion() {
     try {
       setError('');
       setLoading(true);
-      await signUpWithEmail(
+      await signInWithEmail(
         emailRef.current.value,
         passwordRef.current.value
       ).then((data) => {
