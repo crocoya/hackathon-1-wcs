@@ -29,7 +29,7 @@ const UserService = {
   async createUserInDatabase(uid, name) {
     let usersData = await axios.get('/users.json').then((res) => res.data);
     // check if the user isn't already existing, if not, create it
-    if (!usersData[uid]) {
+    if (!usersData || !usersData[uid]) {
       usersData = await axios
         .put(
           `/users/${uid}/.json`,
