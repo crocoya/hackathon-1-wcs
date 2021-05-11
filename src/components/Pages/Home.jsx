@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 
 import React from 'react';
-import './Home.css';
+import './styles/Home.css';
 import Navigation from '../Navigation/Navigation';
 
 export default function Home() {
