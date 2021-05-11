@@ -1,14 +1,17 @@
 import axios from './axios-orders';
+import { firestore } from '../Firebase/Firebase';
 
 const UserService = {
   user: null,
 
-  getUser() {
-    const storedUser = localStorage.getItem('user');
-    if (!this.user && storedUser) {
-      this.user = JSON.parse(storedUser);
-    }
-    return this.user || null;
+  async getUser(uid) {
+    const userSnapShot = await firestore.collection('users').doc(uid).get();
+    const user = userSnapShot.data();
+    return user;
+  },
+
+  getCurrentUser() {
+    this.user = JSON.parse(localStorage.getItem('user'));
   },
 
   logUser(user) {
@@ -26,8 +29,23 @@ const UserService = {
     return usersData;
   },
 
-  async createUserInDatabase(uid, name) {
-    let usersData = await axios.get('/users.json').then((res) => res.data);
+  async createUserInDatabase(uid, name, email) {
+    console.log('createUserInDatabase');
+    const result = await firestore.collection('users').doc(uid).set(
+      {
+        pseudo: name,
+        email: email,
+      },
+      { merge: true }
+    );
+    console.log(result);
+
+    this.user = {
+      uid,
+      pseudo: name,
+    };
+
+    /* let usersData = await axios.get('/users.json').then((res) => res.data);
     // check if the user isn't already existing, if not, create it
     if (!usersData || !usersData[uid]) {
       usersData = await axios
@@ -50,7 +68,7 @@ const UserService = {
     } else {
       usersData = usersData[uid];
     }
-    this.logUser(usersData);
+    this.logUser(usersData); */
   },
 
   updateUser(property, value) {

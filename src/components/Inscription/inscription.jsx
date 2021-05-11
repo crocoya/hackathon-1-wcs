@@ -32,7 +32,8 @@ export default function Inscription() {
       ).then((data) => {
         UserService.createUserInDatabase(
           data.user.uid,
-          nameRef.current.value
+          nameRef.current.value,
+          emailRef.current.value
         ).then(() => history.push('/'));
       });
     } catch (err) {
