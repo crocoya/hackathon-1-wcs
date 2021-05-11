@@ -10,20 +10,20 @@ function Navigation() {
         <Link to='/'>
           <li>Accueil</li>
         </Link>
-        <Link to='/Reservation'>
+        <Link to='/reservation'>
           <li>Reservation</li>
         </Link>
-        <Link to='/A propos'>
+        <Link to='/about'>
           <li>A propos</li>
         </Link>
       </ul>
       <div className='compte'>
-        <Link to='/Connexion'>
+        <Link to='/connexion'>
           <button type='button' className='se_connecter'>
             Se connecter
           </button>
         </Link>
-        <Link to='/Inscription'>
+        <Link to='/inscription'>
           <button type='button' className='s-inscrire'>
             S'inscrire
           </button>
