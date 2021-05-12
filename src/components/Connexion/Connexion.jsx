@@ -24,9 +24,10 @@ export default function Connexion() {
         emailRef.current.value,
         passwordRef.current.value
       ).then((data) => {
-        UserService.getAllUsers().then((users) => {
-          UserService.logUser(users[data.user.uid]);
-          history.push('/');
+        UserService.getUser(data.user.uid).then((user) => {
+          UserService.logUser(user);
+          console.log('user', UserService.user);
+          history.push('/reservation');
         });
       });
     } catch (err) {
@@ -37,7 +38,7 @@ export default function Connexion() {
   }
   return (
     <>
-      <div className='cont1'>
+      <div className='cont'>
         <div className='form sign-up'>
           <div className='inform'>
             <h2>Connectez-vous</h2>

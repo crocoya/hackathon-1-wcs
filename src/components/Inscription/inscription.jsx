@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import { useHistory } from 'react-router';
 import { useAuth } from '../Firebase/Context';
 import UserService from '../Service/user-service';
-import './Inscription.css';
+import './inscription.css';
 
 export default function Inscription() {
   const nameRef = useRef();
@@ -32,8 +32,9 @@ export default function Inscription() {
       ).then((data) => {
         UserService.createUserInDatabase(
           data.user.uid,
-          nameRef.current.value
-        ).then(() => history.push('/'));
+          nameRef.current.value,
+          emailRef.current.value
+        ).then(() => history.push('/reservation'));
       });
     } catch (err) {
       setError('Création du compte impossible');
