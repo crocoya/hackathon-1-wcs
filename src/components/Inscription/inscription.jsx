@@ -34,7 +34,7 @@ export default function Inscription() {
           data.user.uid,
           nameRef.current.value,
           emailRef.current.value
-        ).then(() => history.push('/'));
+        ).then(() => history.push('/reservation'));
       });
     } catch (err) {
       setError('Création du compte impossible');

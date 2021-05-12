@@ -13,6 +13,7 @@ export default function Reservation() {
     <>
       <div className='container-reservation'>
         {currentUser && <div>{currentUser.pseudo}</div>}
+        
       </div>
     </>
   );
