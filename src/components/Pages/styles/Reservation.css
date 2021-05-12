@@ -80,9 +80,14 @@
   display: flex;
   justify-content: center;
   box-shadow: black;
-  color: white;
+  color: red;
   box-shadow: 0px 0px 5px black;
   margin-bottom: 50px;
   width: 50%;
   margin-left: 25%;
+}
+
+.elon-title {
+  margin-left: 10px;
+  color: black;
 }
