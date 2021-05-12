@@ -39,7 +39,7 @@ export default function Connexion() {
   return (
     <>
       <div className='cont'>
-        <div className='form sign-up'>
+        <div className='form-sign-up1'>
           <div className='inform'>
             <h2>Connectez-vous</h2>
             {error && <div className='setError'>{error}</div>}

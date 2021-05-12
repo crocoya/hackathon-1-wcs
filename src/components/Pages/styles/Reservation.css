@@ -14,12 +14,12 @@
 .placementBoutton2 {
   position: absolute;
   margin-top: -57px;
-  margin-left: 700px;
+  margin-left: 500px;
 }
 .placementBoutton3 {
   position: absolute;
   margin-top: -60px;
-  margin-left: 650px;
+  margin-left: 350px;
 }
 .style-boutton {
   border: solid 1px;
@@ -71,4 +71,7 @@
 }
 .style-boutton3:hover {
   background-color: rgba(170, 170, 170, 0.5);
+}
+.postionList {
+  display: flex;
 }

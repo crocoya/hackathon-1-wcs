@@ -1,12 +1,14 @@
-.form-sign-up {
-  background-image: url('https://www.boliden.com/globalassets/news/23575292-artificial-intelligence-conceptual-digital-illustration.jpg%27');
+.form-sign-up1 {
   background-size: cover;
   height: 100vh;
   width: 100vw;
+  background-image: url('https://www.boliden.com/globalassets/news/23575292-artificial-intelligence-conceptual-digital-illustration.jpg');
 }
 
 .cont {
-  display: flex;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
   flex-direction: column;
   align-items: center;
 }
