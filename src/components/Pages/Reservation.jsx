@@ -6,7 +6,7 @@ export default function Reservation() {
   return (
     <div className='container-reservation'>
       <div className='postionList'>
-        <h1 className="title-reserv">RESERVEZ VOTRE VOYAGE INOUBLIABLE</h1>
+        <h1 className="title-reserv">TO THE MOON</h1>
         <TransferList />
       </div>
     </div>
