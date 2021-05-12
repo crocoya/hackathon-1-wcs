@@ -27,7 +27,7 @@ html {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-main {
+.main-hero {
   width: 100%;
   height: 100vh;
   background-image: url('https://18-07.com/wp-content/uploads/2019/09/dreamstime_xxl_95668309.jpg');

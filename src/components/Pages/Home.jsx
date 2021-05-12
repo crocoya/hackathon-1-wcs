@@ -8,7 +8,7 @@ import Reservation from './Reservation';
 
 export default function Home() {
   return (
-    <main>
+    <main className="main-hero">
       <div className='pres'>
         <div className='positionBotton'>
           <Link to='/reservation'>
