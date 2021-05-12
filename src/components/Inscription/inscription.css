@@ -19,19 +19,19 @@ form {
   align-items: center;
 }
 
-span{
+span {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 30px;
+  margin: 10px;
 }
 
-.submit{
+.submit {
   border-radius: 3px;
   border-color: white;
   background: transparent;
   color: white;
-  margin-right: 40px;
+  margin-top: 20px;
   padding: 10px;
   border: solid 1px;
   font-family: 'Space Mono';
