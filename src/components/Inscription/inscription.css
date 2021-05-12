@@ -13,4 +13,32 @@
 
 form {
   display: flex;
+  color: white;
+  margin-top: 250px;
+  flex-direction: column;
+  align-items: center;
+}
+
+span {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.submit {
+  border-radius: 3px;
+  border-color: white;
+  background: transparent;
+  color: white;
+  margin-top: 20px;
+  padding: 10px;
+  border: solid 1px;
+  font-family: 'Space Mono';
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #fff;
+  color: #010101;
 }

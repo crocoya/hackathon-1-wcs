@@ -65,7 +65,7 @@ export default function Inscription() {
               <input type='password' ref={passwordRef} />
             </label>
             <label>
-              <span>Confirmer mot de passe</span>
+              <span>Confirmation</span>
               <input type='password' ref={passwordConfirmRef} />
             </label>
             <button type='submit' className='submit' disabled={loading}>
