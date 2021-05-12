@@ -25,3 +25,20 @@ span{
   justify-content: space-around;
   margin: 30px;
 }
+
+.submit{
+  border-radius: 3px;
+  border-color: white;
+  background: transparent;
+  color: white;
+  margin-right: 40px;
+  padding: 10px;
+  border: solid 1px;
+  font-family: 'Space Mono';
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #fff;
+  color: #010101;
+}
